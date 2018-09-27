@@ -17,7 +17,8 @@ K-means
 
 Hierrchical clustering
 >single-link clustering 
-><div align=center><img src=resources/3.png></div>
+- SLC测量的是簇之间最小的距离
+<div align=center><img src=resources/3.png></div>
 
 Density clustering
 >
