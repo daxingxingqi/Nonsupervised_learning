@@ -7,3 +7,13 @@ Example
 2. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
 
 3. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
+
+K-means
+<div align=center><img src=resources/1.png></div>
+Hierrchical clustering
+>
+
+Density clustering
+>
+
+DNSCAN
