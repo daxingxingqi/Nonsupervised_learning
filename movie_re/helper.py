@@ -47,7 +47,7 @@ def sparse_clustering_errors(k, data):
     errors = [mean_squared_error(row, cluster_centers[cluster]) for row, cluster in zip(data, predictions)]
     return sum(errors)
 
-
+# pandas str.contains https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.str.contains.html
 def get_genre_ratings(ratings, movies, genres, column_names):
     genre_ratings = pd.DataFrame()
     for genre in genres:        
