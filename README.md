@@ -1,12 +1,10 @@
 # Nonsupervised_learning
 
-Example
+Hierarchical Clustering Example
 
 ## 1. [Using Hierarchical Clustering of Secreted Protein Families to Classify and Rank Candidate Effectors of Rust Fungi](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029847)
 
-## 2. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
 
-## 3. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
 
 K-means
 下图是K-means对于不同数据集的表现。
@@ -84,3 +82,8 @@ Density clustering
 - 缺点
   - Border points 可以被两个簇同时涉及
   - 不同密度需要用HDBSCAN
+  
+  DBSCAN esample
+## 1. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
+
+## 2. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
