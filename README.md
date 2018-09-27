@@ -37,16 +37,15 @@ Hierrchical clustering
 >ward method clustering
 - 计算所有距离的平均值到中间值的平方，加在一起然后减去内部点到内部中间值的平方
 <div align=center><img src=resources/9.png></div>
-``` python
+
+``` 
 from sklearn.cluster import AgglomerativeClustering
 
 # Hierarchical clustering
 # Ward is the default linkage algorithm, so we'll start with that
 ward = AgglomerativeClustering(n_clusters=3)
 ward_pred = ward.fit_predict(iris.data)
-```
 
-``` python
 # Import scipy's linkage function to conduct the clustering
 from scipy.cluster.hierarchy import linkage
 
