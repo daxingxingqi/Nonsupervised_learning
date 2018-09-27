@@ -75,11 +75,10 @@ Density clustering
 - K-means 对比 DBSCAN
 <div align=center><img src=resources/12.png></div>
 - 优点
-  -- 不用指定簇的个数
-  -- 形状和大小不固定
-  -- 可以处理噪音
-  -- 可以处理离群值
-
+  - 不用指定簇的个数
+  - 形状和大小不固定
+  - 可以处理噪音
+  - 可以处理离群值
 - 缺点
-  -- Border points 可以被两个簇同时涉及
-  -- 不同密度需要用HDBSCAN
+  - Border points 可以被两个簇同时涉及
+  - 不同密度需要用HDBSCAN
