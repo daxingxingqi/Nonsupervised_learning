@@ -40,42 +40,37 @@ Hierrchical clustering
 
 ``` 
 from sklearn.cluster import AgglomerativeClustering
-
 # Hierarchical clustering
 # Ward is the default linkage algorithm, so we'll start with that
 ward = AgglomerativeClustering(n_clusters=3)
 ward_pred = ward.fit_predict(iris.data)
 
+#可视化
 # Import scipy's linkage function to conduct the clustering
 from scipy.cluster.hierarchy import linkage
-
 # Specify the linkage type. Scipy accepts 'ward', 'complete', 'average', as well as other values
 # Pick the one that resulted in the highest Adjusted Rand Score
 linkage_type = 'ward'
-
 linkage_matrix = linkage(normalized_X, linkage_type)
-
 from scipy.cluster.hierarchy import dendrogram
 import matplotlib.pyplot as plt
 plt.figure(figsize=(22,18))
-
 # plot using 'dendrogram()'
 dendrogram(linkage_matrix)
-
 plt.show()
-
 import seaborn as sns
-
 sns.clustermap(normalized_X, figsize=(12,18), method=linkage_type, cmap='viridis')
-
 # Expand figsize to a value like (18, 50) if you want the sample labels to be readable
 # Draw back is that you'll need more scrolling to observe the dendrogram
-
 plt.show()
 ```
 
 
 Density clustering
->
-
-DNSCAN
+>DNSCAN [可视化](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
+- 聚合一部分，把其他的作为噪音
+<div align=center><img src=resources/10.png></div>
+- 具体步骤如下
+<div align=center><img src=resources/11.png></div>
+- K-means 对比 DBSCAN
+<div align=center><img src=resources/12.png></div>
