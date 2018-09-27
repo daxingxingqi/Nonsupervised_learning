@@ -6,15 +6,15 @@ Hierarchical Clustering Example
 
 
 
-K-means
+### K-means
 下图是K-means对于不同数据集的表现。
 <div align=center><img src=resources/1.png></div>
 
 层次聚类和密度聚类的区别
 <div align=center><img src=resources/2.png></div>
 
-Hierrchical clustering
->single-link clustering 
+### Hierrchical clustering
+#### single-link clustering 
 - SLC测量的是簇之间最小的距离，然后对比簇与簇之间最小的距离，选择最小的聚合。
 <div align=center><img src=resources/3.png></div>
 - SLC有时候会导致狭长的类
@@ -22,13 +22,13 @@ Hierrchical clustering
 - 下图的SLC对于不同数据集的表现
 <div align=center><img src=resources/5.png></div>
 
->complete-link clustering
+#### complete-link clustering
 - CLC测量的是簇之间最大的距离，然后对比簇与簇之间最大的距离，选择最小的聚合。
 <div align=center><img src=resources/6.png></div>
 - CLC有时会忽略其他的点
 <div align=center><img src=resources/7.png></div>
 
->average-link clustering
+#### average-link clustering
 - 计算所有距离的平均值
 <div align=center><img src=resources/8.png></div>
 
@@ -64,8 +64,8 @@ plt.show()
 ```
 
 
-Density clustering
->DNSCAN [可视化](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
+### Density clustering
+#### DNSCAN [可视化](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
 - 聚合一部分，把其他的作为噪音
 <div align=center><img src=resources/10.png></div>
 - 具体步骤如下
@@ -83,7 +83,7 @@ Density clustering
   - Border points 可以被两个簇同时涉及
   - 不同密度需要用HDBSCAN
   
-  DBSCAN esample
+## DBSCAN esample
 ## 1. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
 
 ## 2. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
