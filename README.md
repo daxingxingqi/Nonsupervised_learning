@@ -83,10 +83,10 @@ plt.show()
   - Border points 可以被两个簇同时涉及
   - 不同密度需要用HDBSCAN
   
-## DBSCAN esample
-## 1. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
+### DBSCAN example
+### 1. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
 
-## 2. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
+### 2. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
 
 ### Gaussian Mixture Models
 - 假定每个簇都遵循特定的统计分布（高斯分布）
@@ -110,3 +110,24 @@ clustering = gmm.predict
 
 # results[1000120100]
 ```
+
+- 优点
+  - soft-clustering
+  - 簇的形状和大小多样
+  
+  
+- 缺点
+  - 对于初始值敏感
+  - 有可能收敛到local minimum
+  - 收敛缓慢
+ 
+### DBSCAN example
+### paper: Nonparametric discovery of human routines from sensor data [PDf]-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.681.3152&rep=rep1&type=pdf
+
+### Paper: Application of the Gaussian mixture model in pulsar astronomy [PDF]-https://arxiv.org/abs/1205.6221
+
+### Paper: Speaker Verification Using Adapted Gaussian Mixture Models [PDF]-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.117.338&rep=rep1&type=pdf
+
+### Paper: Adaptive background mixture models for real-time tracking [PDF]-http://www.ai.mit.edu/projects/vsam/Publications/stauffer_cvpr98_track.pdf
+
+### Video: https://www.youtube.com/watch?v=lLt9H6RFO6A
