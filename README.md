@@ -139,7 +139,7 @@ clustering = gmm.predict
 <div align=center><img src=resources/20.png></div>
 - Internial indices(relative indices)
 - silhouette coefficient-不能很好的评价环形（DBSCAN 不能使用SC，验证使用上面提到的基于密度的聚类验证）
-<div align=center><img src=resources/21.png></div>
+<div align=center><img src=resources/20.png></div>
 - Relative indices
 <div align=center><img src=resources/18.png></div>
 
