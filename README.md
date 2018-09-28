@@ -87,3 +87,16 @@ plt.show()
 ## 1. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
 
 ## 2. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
+
+### Gaussian Mixture Models
+- 假定每个簇都遵循特定的统计分布（高斯分布）
+<div align=center><img src=resources/13.png></div>
+  - step 1 Initialize Gaussian Distribution 使用数据的均值初始化或者使用K-means找到几个簇
+  <div align=center><img src=resources/14.png></div>
+  - step 2 Soft-cluster the data points -"Expection step" 一个数据点的计算，分别计算点A属于A和B的置信虑
+  <div align=center><img src=resources/15.png></div>
+  - step 3 Re-estimate parameters of gaussians - "Maximization"step
+  <div align=center><img src=resources/16.png></div>
+  - step 4 Evaluate log-likelihood
+  <div align=center><img src=resources/17.png></div>
+  
