@@ -164,7 +164,7 @@ MinMaxScaler(copy=True, feature_range=(0, 1))
 ```
 ## 哪些机器学习算法会受到特征缩放的影响？
 
-□ 决策树
+- 决策树
 - 使用 RBF 核函数的 SVM
-□ 线性回归 wx + b
+- 线性回归 wx + b
 - K-均值聚类
