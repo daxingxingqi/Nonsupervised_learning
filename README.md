@@ -131,3 +131,16 @@ clustering = gmm.predict
 ### Paper: Adaptive background mixture models for real-time tracking [PDF]-http://www.ai.mit.edu/projects/vsam/Publications/stauffer_cvpr98_track.pdf
 
 ### Video: https://www.youtube.com/watch?v=lLt9H6RFO6A
+
+## Cluster validation
+[基于密度的聚类验证](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd101/MLND+documents/10.1.1.707.9034.pdf)
+- External indices(有label的情况下）
+<div align=center><img src=resources/19.png></div>
+<div align=center><img src=resources/20.png></div>
+- Internial indices(relative indices)
+- silhouette coefficient-不能很好的评价环形（DBSCAN 不能使用SC，验证使用上面提到的基于密度的聚类验证）
+<div align=center><img src=resources/21.png></div>
+- Relative indices
+<div align=center><img src=resources/18.png></div>
+
+
