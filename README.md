@@ -100,3 +100,13 @@ plt.show()
   - step 4 Evaluate log-likelihood
   <div align=center><img src=resources/17.png></div>
   
+``` python
+from sklearn import datasets, mixture
+
+X = datasets.load_iris().data[:10]
+gmm = mixture.GaussianMixture(n_components = 3)
+gmm.fit(X)
+clustering = gmm.predict
+
+# results[1000120100]
+```
