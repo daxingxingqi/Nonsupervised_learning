@@ -2,11 +2,11 @@
 
 Hierarchical Clustering Example
 
-## 1. [Using Hierarchical Clustering of Secreted Protein Families to Classify and Rank Candidate Effectors of Rust Fungi](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029847)
+### 1. [Using Hierarchical Clustering of Secreted Protein Families to Classify and Rank Candidate Effectors of Rust Fungi](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029847)
 
 
 
-### K-means
+## K-means
 下图是K-means对于不同数据集的表现。
 <div align=center><img src=resources/1.png></div>
 
@@ -64,7 +64,7 @@ plt.show()
 ```
 
 
-### Density clustering
+## Density clustering
 #### DNSCAN [可视化](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
 - 聚合一部分，把其他的作为噪音
 <div align=center><img src=resources/10.png></div>
@@ -87,8 +87,8 @@ plt.show()
 ### 1. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
 
 ### 2. [Anomaly detection in temperature data using dbscan algorithm](https://ieeexplore.ieee.org/abstract/document/5946052/)
-
-### Gaussian Mixture Models
+----
+## Gaussian Mixture Models
 - 假定每个簇都遵循特定的统计分布（高斯分布）
 <div align=center><img src=resources/13.png></div>
   - step 1 Initialize Gaussian Distribution 使用数据的均值初始化或者使用K-means找到几个簇
@@ -121,7 +121,7 @@ clustering = gmm.predict
   - 有可能收敛到local minimum
   - 收敛缓慢
  
-### DBSCAN example
+### GMM example
 ### paper: Nonparametric discovery of human routines from sensor data [PDf]-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.681.3152&rep=rep1&type=pdf
 
 ### Paper: Application of the Gaussian mixture model in pulsar astronomy [PDF]-https://arxiv.org/abs/1205.6221
