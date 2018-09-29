@@ -203,14 +203,14 @@ rp = random_projection.SparseRandomProjection()#效果最好
 new_X = rp.fit_trnsform(X)
 ```
 
-- Independent component analysis
+- [Independent component analysis](https://github.com/daxingxingqi/Nonsupervised_learning/blob/master/Independent%20Component%20Analysis%20Lab-zh.ipynb)
 
 **PCA旨在增大varience，ICA假设所有成份独立,并且数据不遵循高斯分布
 
 具体例子参考，[独立成份分析](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd101/MLND+documents/10.1.1.322.679.pdf)
 
 ``` python
-from sklearn import FastICA
+from sklearn.decomposition import FastICA
 #zip 方法在 Python 2 和 Python 3 中的不同：在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。
 #如果需要了解 Pyhton3 的应用，可以参考 Python3 zip()。
 X = list(zip(signal_1, signal_2, signal_3))
