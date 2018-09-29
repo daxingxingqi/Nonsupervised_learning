@@ -36,7 +36,7 @@ Hierarchical Clustering Example
 - 计算所有距离的平均值到中间值的平方，加在一起然后减去内部点到内部中间值的平方
 <div align=center><img src=resources/9.png></div>
 
-``` 
+```  python
 from sklearn.cluster import AgglomerativeClustering
 # Hierarchical clustering
 # Ward is the default linkage algorithm, so we'll start with that
@@ -145,7 +145,7 @@ clustering = gmm.predict
 
 ## 特征缩放
 注意输入data需要是float
-```
+``` python
 >>> from sklearn.preprocessing import MinMaxScaler
 >>>
 >>> data = [[-1, 2], [-0.5, 6], [0, 10], [1, 18]]
@@ -189,3 +189,43 @@ MinMaxScaler(copy=True, feature_range=(0, 1))
 - 人脸照片通常有很高的输入维度（很多像素）
 - 人脸具有一些一般性形态，这些形态可以以较小维数的方式捕捉，比如人一般都有两只眼睛，眼睛基本都位于接近脸的顶部的位置
 - 使用机器学习技术，人脸识别是非常容易的（因为人类可以轻易做到）
+
+## 数据降维 
+- random projection
+
+**随机投影可以在高维度是更快的减少维度（不用像PCA先计算varience，节省资源），但是效果不如PCA。在选择特征数量时，可以有下面的公式自动选择。
+
+<div align=center><img src=resources/22.png></div>
+
+``` python
+from sklearn import random_projection
+rp = random_projection.SparseRandomProjection()#效果最好
+new_X = rp.fit_trnsform(X)
+```
+
+- Independent component analysis
+
+**PCA旨在增大varience，ICA假设所有成份独立,并且数据不遵循高斯分布
+
+具体例子参考，[独立成份分析](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd101/MLND+documents/10.1.1.322.679.pdf)
+
+``` python
+from sklearn import FastICA
+#zip 方法在 Python 2 和 Python 3 中的不同：在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。
+#如果需要了解 Pyhton3 的应用，可以参考 Python3 zip()。
+X = list(zip(signal_1, signal_2, signal_3))
+ica = FastICA(n_components=3)
+components = ica.fit_transform(X)
+```
+zip 
+``` python
+>>>a = [1,2,3]
+>>> b = [4,5,6]
+>>> c = [4,5,6,7,8]
+>>> zipped = zip(a,b)     # 打包为元组的列表
+[(1, 4), (2, 5), (3, 6)]
+>>> zip(a,c)              # 元素个数与最短的列表一致
+[(1, 4), (2, 5), (3, 6)]
+>>> zip(*zipped)          # 与 zip 相反，*zipped 可理解为解压，返回二维矩阵式
+[(1, 2, 3), (4, 5, 6)]
+```
