@@ -6,14 +6,14 @@ Hierarchical Clustering Example
 
 
 
-## K-means
+## [K-means](https://github.com/daxingxingqi/Nonsupervised_learning/tree/master/movie_re)
 下图是K-means对于不同数据集的表现。
 <div align=center><img src=resources/1.png></div>
 
 层次聚类和密度聚类的区别
 <div align=center><img src=resources/2.png></div>
 
-### Hierrchical clustering
+### [Hierrchical clustering](https://github.com/daxingxingqi/Nonsupervised_learning/blob/master/Hierarchical%20Clustering%20Lab-zh.ipynb)
 #### single-link clustering 
 - SLC测量的是簇之间最小的距离，然后对比簇与簇之间最小的距离，选择最小的聚合。
 <div align=center><img src=resources/3.png></div>
@@ -65,7 +65,7 @@ plt.show()
 
 
 ## Density clustering
-#### DNSCAN [可视化](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
+#### [DNSCAN](https://github.com/daxingxingqi/Nonsupervised_learning/blob/master/DBSCAN%20Notebook-zh.ipynb) [可视化](https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
 - 聚合一部分，把其他的作为噪音
 <div align=center><img src=resources/10.png></div>
 - 具体步骤如下
@@ -169,7 +169,7 @@ MinMaxScaler(copy=True, feature_range=(0, 1))
 - 线性回归 wx + b 无
 - K-均值聚类 大
 
-## PCA
+## [PCA](https://github.com/daxingxingqi/Nonsupervised_learning/blob/master/PCA%20Mini-Project-zh.ipynb)
 **例子： 图像数据集，1800个图像10000个特征（100*100），做PCA时选择，min（1800，10000）。这时把1800个图像映射到前200个图像中（根据varience排序），最后通过机器学习算法计算这200个图像。
 
 - 将输入特征转化为主成份
