@@ -8,7 +8,7 @@ Hierarchical Clustering Example
 
 ## K-means
 下图是K-means对于不同数据集的表现。
-<div align=center><img img width="1500" height="1500" src=resources/1.png></div>
+<div align=center><img src=resources/1.png></div>
 
 层次聚类和密度聚类的区别
 <div align=center><img src=resources/2.png></div>
