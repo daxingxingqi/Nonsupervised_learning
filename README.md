@@ -82,7 +82,37 @@ plt.show()
 - 缺点
   - Border points 可以被两个簇同时涉及
   - 不同密度需要用HDBSCAN
-  
+#### 程序
+``` python
+% matplotlib inline
+from sklearn.datasets import make_circles
+from sklearn.mixture import GaussianMixture as GMM
+from sklearn.cluster import KMeans, DBSCAN
+import matplotlib.pyplot as plt
+
+plt.style.use('bmh')
+
+# toy data
+X, _ = make_circles(n_samples=600, factor=.3, noise=.05)
+ptx, pty = X.T
+
+# models
+models = ['GMM','KMeans','DBSCAN']
+labels = []
+labels.append(GMM(2).fit(X).predict(X))
+labels.append(KMeans(2).fit(X).predict(X))
+labels.append(DBSCAN(eps=0.12).fit_predict(X))
+
+# visualization
+fig, axes = plt.subplots(1, 3, figsize=(20, 6))
+for i in range(3):
+    axes[i].scatter(ptx, pty, c=labels[i])
+    axes[i].set_title(models[i])
+```
+<div align=center><img width="650" src=resources/23.png></div>
+下面这个网页能让你数分钟内了解DBSCAN，很值得花花时间看一下:
+https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/
+
 ### DBSCAN example
 ### 1. [Traffic Classification Using Clustering Algorithms](https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf) [pdf]
 
